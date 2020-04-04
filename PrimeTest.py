@@ -19,7 +19,7 @@ n = 2
 while n < test:
     quotient = test / n
     if quotient == round(quotient):
-        print(str(test) + " is not prime")
+        print(str(test) + " is not prime.")
         exit()
     else:
         n += 1
