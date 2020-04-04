@@ -15,20 +15,13 @@ if test < 2:
     print("Error: user did not enter an integer greater than 1")
     exit()
 
-# # checks if user actually entered an integer greater than 1
-# # doesn't check if user entered an integer
-#
-# if test < 2:
-#     print("Learn to read directions first.")
-#     exit()
-
-# n = 2
-# while n < test:
-#     quotient = test / int(n)
-#     if isinstance(quotient, int):
-#         print(str(test) + " is not prime.")
-#         exit()
-#     else:
-#         n += 1
-# print(str(test) + " is prime.")
-# exit()
+n = 2
+while n < test:
+    quotient = test / n
+    if quotient == round(quotient):
+        print(str(test) + " is not prime")
+        exit()
+    else:
+        n += 1
+print(str(test) + " is prime.")
+exit()
