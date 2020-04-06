@@ -1,3 +1,4 @@
+from math import sqrt
 running = True
 while running:
     test = input("Enter any integer greater than 1 (enter exit to stop): ")
@@ -24,9 +25,8 @@ while running:
         isPrime = True
         while testing:
             n = 2
-            while n < test:
-                quotient = test / n
-                if quotient == round(quotient):
+            while n <= sqrt(test):
+                if test % n == 0:
                     isPrime = False
                     testing = False
                     break
